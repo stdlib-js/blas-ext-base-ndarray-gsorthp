@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,17 +16,26 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
-* Sort a one-dimensional ndarray using heapsort.
+* Sorts a one-dimensional ndarray using heapsort.
 *
-* @module @stdlib/blas-ext-base-ndarray-gsorthp
+* ## Notes
+*
+* -   When the sort order is less than zero, the input ndarray is sorted in **decreasing** order. When the sort order is greater than zero, the input ndarray is sorted in **increasing** order. When the sort order is equal to zero, the input ndarray is left unchanged.
+*
+* @param arrays - array-like object containing a one-dimensional input ndarray and a zero-dimensional ndarray specifying the sort order
+* @returns input ndarray
 *
 * @example
-* var ndarray = require( '@stdlib/ndarray-base-ctor' );
 * var ndarray2array = require( '@stdlib/ndarray-base-to-array' );
-* var gsorthp = require( '@stdlib/blas-ext-base-ndarray-gsorthp' );
+* var scalar2ndarray = require( '@stdlib/ndarray-from-scalar' );
+* var ndarray = require( '@stdlib/ndarray-base-ctor' );
 *
 * var xbuf = [ 1.0, -2.0, 3.0, -4.0 ];
 * var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
@@ -41,12 +50,9 @@
 * var arr = ndarra2array( out );
 * // returns [ -4.0, -2.0, 1.0, 3.0 ]
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function gsorthp<T = unknown>( arrays: [ typedndarray<T>, typedndarray<number> ] ): typedndarray<T>;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = gsorthp;
