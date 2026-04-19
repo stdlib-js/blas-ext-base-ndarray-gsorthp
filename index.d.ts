@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,25 +16,21 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
-var ndarraylike2scalar = require( '@stdlib/ndarray-base-ndarraylike2scalar' );
-var numelDimension = require( '@stdlib/ndarray-base-numel-dimension' );
-var getStride = require( '@stdlib/ndarray-base-stride' );
-var getOffset = require( '@stdlib/ndarray-base-offset' );
-var getData = require( '@stdlib/ndarray-base-data-buffer' );
-var strided = require( '@stdlib/blas-ext-base-gsorthp' ).ndarray;
-
-
-// MAIN //
+import { typedndarray, genericndarray } from '@stdlib/types/ndarray';
 
 /**
 * Sorts a one-dimensional ndarray using heapsort.
 *
-* @param {ArrayLikeObject<Object>} arrays - array-like object containing a one-dimensional input ndarray and a zero-dimensional ndarray specifying the sort order
-* @returns {Object} input ndarray
+* ## Notes
+*
+* -   When the sort order is less than zero, the input ndarray is sorted in **decreasing** order. When the sort order is greater than zero, the input ndarray is sorted in **increasing** order. When the sort order is equal to zero, the input ndarray is left unchanged.
+*
+* @param arrays - array-like object containing a one-dimensional input ndarray and a zero-dimensional ndarray specifying the sort order
+* @returns input ndarray
 *
 * @example
 * var scalar2ndarray = require( '@stdlib/ndarray-from-scalar' );
@@ -50,17 +46,9 @@ var strided = require( '@stdlib/blas-ext-base-gsorthp' ).ndarray;
 * var out = gsorthp( [ x, ord ] );
 * // returns <ndarray>[ -4.0, -2.0, 1.0, 3.0 ]
 */
-function gsorthp( arrays ) {
-	var ord;
-	var x;
-
-	x = arrays[ 0 ];
-	ord = ndarraylike2scalar( arrays[ 1 ] );
-	strided( numelDimension( x, 0 ), ord, getData( x ), getStride( x, 0 ), getOffset( x ) ); // eslint-disable-line max-len
-	return x;
-}
+declare function gsorthp<T extends typedndarray<unknown> | genericndarray<unknown> = typedndarray<unknown>>( arrays: [ T, typedndarray<number> ] ): T;
 
 
 // EXPORTS //
 
-module.exports = gsorthp;
+export = gsorthp;
