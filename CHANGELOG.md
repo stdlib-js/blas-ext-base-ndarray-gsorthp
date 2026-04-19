@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-17)
+## Unreleased (2026-04-19)
 
 <section class="bug-fixes">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`dd046ff`](https://github.com/stdlib-js/stdlib/commit/dd046ffd9757ec6e1974f4e12d16434d35753596) - **docs:** improve doctests for ndarray instances in `blas/ext/ndarray/gsorthp` [(#11546)](https://github.com/stdlib-js/stdlib/pull/11546) _(by Uday Kakade)_
 -   [`328ca77`](https://github.com/stdlib-js/stdlib/commit/328ca7797c1446568242d8bbd510129396fe3af0) - **docs:** fix notes _(by Athan Reines)_
 -   [`df6fbe8`](https://github.com/stdlib-js/stdlib/commit/df6fbe8072b04fc62d2cf41a1f54f68c73acc58f) - **bench:** refactor to use string interpolation in `blas/ext/base` [(#11379)](https://github.com/stdlib-js/stdlib/pull/11379) _(by Karan Anand)_
 -   [`839986d`](https://github.com/stdlib-js/stdlib/commit/839986d9f41ebee28ff3139ec094ab9c8b98d8df) - **test:** ensure dtype equality _(by Athan Reines)_
@@ -38,10 +39,11 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Karan Anand
+-   Uday Kakade
 
 </section>
 
