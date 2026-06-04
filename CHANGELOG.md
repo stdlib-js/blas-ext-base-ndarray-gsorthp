@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-13)
+## Unreleased (2026-06-04)
 
 <section class="bug-fixes">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`15a731b`](https://github.com/stdlib-js/stdlib/commit/15a731b9aa63d384fa1d8d5cd3f9c20004714ad4) - **refactor:** remove redundant generic constraint in `blas/ext/base/ndarray/gsorthp` [(#12546)](https://github.com/stdlib-js/stdlib/pull/12546) _(by Philipp Burckhardt)_
 -   [`418aa38`](https://github.com/stdlib-js/stdlib/commit/418aa388dce65f953db44a6e89062b902967a624) - **chore:** modernize examples and benchmarks _(by Athan Reines)_
 -   [`dd046ff`](https://github.com/stdlib-js/stdlib/commit/dd046ffd9757ec6e1974f4e12d16434d35753596) - **docs:** improve doctests for ndarray instances in `blas/ext/ndarray/gsorthp` [(#11546)](https://github.com/stdlib-js/stdlib/pull/11546) _(by Uday Kakade)_
 -   [`328ca77`](https://github.com/stdlib-js/stdlib/commit/328ca7797c1446568242d8bbd510129396fe3af0) - **docs:** fix notes _(by Athan Reines)_
@@ -40,10 +41,11 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Karan Anand
+-   Philipp Burckhardt
 -   Uday Kakade
 
 </section>
