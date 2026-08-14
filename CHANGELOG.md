@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-12)
+## Unreleased (2026-08-14)
 
 <section class="bug-fixes">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`513eef6`](https://github.com/stdlib-js/stdlib/commit/513eef6f9c2c70bff4dc3c0a719d4c6dbfe2e8a4) - **docs:** add missing space and fix punctuation [(#14226)](https://github.com/stdlib-js/stdlib/pull/14226) _(by Philipp Burckhardt)_
 -   [`cb9723a`](https://github.com/stdlib-js/stdlib/commit/cb9723af638d9244ea0b50bcb07c550f13bdedce) - **docs:** update examples [(#14169)](https://github.com/stdlib-js/stdlib/pull/14169) _(by Philipp Burckhardt)_
 -   [`fcca435`](https://github.com/stdlib-js/stdlib/commit/fcca4355ad6d547eb04701c573cd151fe74adf88) - **docs:** update `blas/ext/base/ndarray` scalar helper imports [(#12880)](https://github.com/stdlib-js/stdlib/pull/12880) _(by Karan Anand)_
 -   [`15a731b`](https://github.com/stdlib-js/stdlib/commit/15a731b9aa63d384fa1d8d5cd3f9c20004714ad4) - **refactor:** remove redundant generic constraint in `blas/ext/base/ndarray/gsorthp` [(#12546)](https://github.com/stdlib-js/stdlib/pull/12546) _(by Philipp Burckhardt)_
